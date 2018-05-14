@@ -2,10 +2,14 @@
 	<!-- 	
 				<hr /> 标签在页面中创建水平线
 				<p> 是 块级元素
+				<abbr></abbr>  abbreviated 缩写
+				<bdo>如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)</bdo>
+				<del></del> <ins></ins>
 			-->
 <html >
 	<head> 
 		<title>title test</title>
+		<bdo dir="rtl">1234567</bdo>
 		<meta content="aqua"; charset="utf-8" />
 		<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
 		<h6>--------------分割线-----------------</h6>
@@ -68,6 +72,8 @@
 				font: "微软雅黑";
 			}
 		</style>
+		<abbr style="align-content: center;background-color: coral;" title="world wild web">WWW</abbr>
+	
 	</head>
 	<body background="img/img1.jpeg">
 		<div id="d2" class="page">
@@ -75,11 +81,16 @@
 			<h4> 1 主标签</h4>
 			<p>   html head body meta </p>
 			<h4>2 子标签</h4> 
-			<p>    p h[1-6] a img  br hr table !-- font </p>	
+			<p>    p h[1-6] a img  br hr  !-- font 
+				 table table_tr table_td table_caption table_frame
+				ul ol li  
+			</p>	
 			<h4>3 属性</h4>
 			<h6 style="align-self: center;color: red;background-color: orange;"> 过期属性 align bgcolor color(非 style 中 color)</h6>
 			<p > class id style title href  border bordercolor
-				 width height style  font-size font-familby style_color</p>
+				 width height style  font-size font-familby style_color
+				 target a_name z_href image_src 
+			</p>
 			<h4><strong>4 文本格式化</strong></h4>
 			<p style="font-size: small;"> 
 				<i>	标签 b:bold strong:strong big:big small:small em:emphasized i:italic 斜体 sub:subscript 下角标 sup:superscript 上角标</i>
@@ -90,13 +101,51 @@
 			预格式文本。
 			它保留了      空格
 			和换行</pre>
+		 
+		 <dl  style="background: cyan;">
+		 	<dt style="background: orange;">t</dt>
+		 	<dd>da</dd>
+		 	<dd>db</dd>
+		 	<dt>t2</dt>
+		 	<dd>dc</dd>
+		 	<dd>dd</dd>
+		 </dl> 
+ 
+		 
+			<table  id="table1" cellpadding="4" cellspacing="4" bgcolor="yellow" width="100" height="40" border="2" bordercolor="green">
+				<!--<th>header?</th>-->
+				<caption>caption</caption>
+				<tr>
+					<td>r1d1</td>
+					<td>r1d2</td>
+				</tr>
+				<tr>
+					<td>&nbsp;??&nbsp;?</td>
+					<td>r2d2</td>
+				</tr> 
+			</table>
+			<table id="tab2" frame="vsides"  style="background: mediumaquamarine;color: orange;">
+				<caption> cap1</caption> 
+				<colgroup>
+					<col style="background: red;" />
+					<col style="background: yellow;" /> 
+					
+				</colgroup>
+				<tr align="center">
+					<th>name</th>
+					<td>nemo</td>
+				</tr>
+				<tr align="center">
+					<th rowspan="2"> tel</th>
+					<td>123</td>
+				</tr>
+				<tr>
+					<td>456</td>
+				</tr> 
+			</table> 
 			
 			<hr />
-			<table bgcolor="yellow" width="200" height="40" border="2" bordercolor="gray">
-				
-			</table>
-			<hr />
- 			<h6><a href="http://baidu.com"> this is a link</a></h6>
+ 			<h6><a href="http://baidu.com" target="_self" style="text-decoration: none;"> this is a link</a></h6>
 			<img src="img/img1.jpeg" width="100" height="100" />
 			<br />
 			<h6>在开始标签中添加斜杠，比如 (br /)，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。</h6>
