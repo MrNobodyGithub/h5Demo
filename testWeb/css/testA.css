@@ -1,0 +1,19 @@
+.classB{ 
+				/*font: "微软雅黑";*/
+				font: "bookman old style";
+				size: a4;
+			}
+.page{
+	text-align: center;
+	font-size: 14;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin: 0;
+}
+p{
+	margin-left: 20;
+	margin-right: 20;
+	background-color: aqua;
+}
+
+ 

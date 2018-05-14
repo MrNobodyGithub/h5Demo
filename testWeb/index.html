@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+	<!-- 	
+				<hr /> 标签在页面中创建水平线
+				<p> 是 块级元素
+			-->
+<html >
+	<head> 
+		<title>title test</title>
+		<meta content="aqua"; charset="utf-8" />
+		<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+		<h6>--------------分割线-----------------</h6>
+		<script type="text/javascript">
+			function helloWorld (){
+				document.getElementById("d1");
+//				document.getElementsByTagName("div");
+				var list = document.getElementsByClassName("btn")
+//				alert(list[0].type)
+				var json = {"test":"testa","test1":{"a1":"a2"}}
+//				alert(json.test);
+				String.prototype.$trim=function(){
+					return "prototype"
+				}
+			var a = "test".$trim("a")
+			
+			var  objc = new  testObjc()
+//			alert(objc.param)
+//			alert(objc.meth())
+
+//			 JS 提示 闭包对象
+			var person = {};
+			(function (p){
+				p.setName = function(name){
+					this.name = name;
+				},
+				p.getName = function(){
+					return this.name;
+				}
+			})(person);
+			
+//			person.setName("name nemo");
+//			alert(person.getName())
+		
+			(function(p){
+				p.friend = {
+					setName:function(name){
+						this.name = name;
+					},
+					getName:function(){
+						return this.name;
+					}
+				}
+				
+			})(person);
+			person.friend.setName("friend name");
+			alert(person.friend.getName()); 
+ 
+//				print("hello script 执行 逻辑操作")
+			} 
+			function testObjc(){
+				this.param = 1;
+				this.meth = function(){
+					return 44;
+				}
+			}
+		</script>
+		<style type="text/css"> 
+			.classA{ 
+				font: "微软雅黑";
+			}
+		</style>
+	</head>
+	<body background="img/img1.jpeg">
+		<div id="d2" class="page">
+			<p > 整理 当前  个人 已用 标签</p>
+			<h4> 1 主标签</h4>
+			<p>   html head body meta </p>
+			<h4>2 子标签</h4> 
+			<p>    p h[1-6] a img  br hr table !-- font </p>	
+			<h4>3 属性</h4>
+			<h6 style="align-self: center;color: red;background-color: orange;"> 过期属性 align bgcolor color(非 style 中 color)</h6>
+			<p > class id style title href  border bordercolor
+				 width height style  font-size font-familby style_color</p>
+			<h4><strong>4 文本格式化</strong></h4>
+			<p style="font-size: small;"> 
+				<i>	标签 b:bold strong:strong big:big small:small em:emphasized i:italic 斜体 sub:subscript 下角标 sup:superscript 上角标</i>
+			</p>
+			<h4><em>5 预格式文本</em></h4>
+			<p><small>标签 pre  <sub>可以保留格式 空格 和 换行</sub></small></p>
+			 <pre>这是
+			预格式文本。
+			它保留了      空格
+			和换行</pre>
+			
+			<hr />
+			<table bgcolor="yellow" width="200" height="40" border="2" bordercolor="gray">
+				
+			</table>
+			<hr />
+ 			<h6><a href="http://baidu.com"> this is a link</a></h6>
+			<img src="img/img1.jpeg" width="100" height="100" />
+			<br />
+			<h6>在开始标签中添加斜杠，比如 (br /)，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。</h6>
+			<h6>  HTML 指的是 Hyper Text Markup Language </h6>
+			
+		</div>
+		  <p>------------------分割线-------------------</p>
+		<div id="d1" class="classA"></div>
+		 <div class="classA">
+		 	hello world
+		 </div>
+ 
+	</body>
+	<div class="classB">
+		classB
+	</div>
+	<div id="page">
+		<div class="logo_ul" id="navigation">
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</div>
+	</div>
+	<input type="button" class="btn" name="" id="" value="click " onclick="helloWorld()" />
+	
+</html>
