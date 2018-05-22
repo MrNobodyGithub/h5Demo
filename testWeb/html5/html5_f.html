@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function btnActionZ() {
+				if(typeof(Storage) !== "undefined") {
+					if(localStorage.clickcount) {
+						localStorage.clickcount = Number(localStorage.clickcount) + 1;
+					} else {
+						localStorage.clickcount = 1;
+					}
+					document.getElementById("result").innerHTML = "click count = " + localStorage.clickcount;
+				} else {
+					document.getElementById("result").innerHTML = "sorry the browser is not support"
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<p><button onclick=" btnActionZ()" type="button">请点击这里！</button></p>
+		<div id="result"></div>
+		<p>请点击按钮使计数器递增。</p>
+		<p>请关闭浏览器或标签页，然后再试一次，计数器将继续计数（不会重置）。</p>
+
+	</body>
+
+</html>
